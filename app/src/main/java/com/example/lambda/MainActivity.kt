@@ -27,7 +27,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(showUp.root)
 
         showUp.btn.setOnClickListener {
-            showUp.textView.text = "람다식 적용! $num1 + $num2 = ${lambdaTest(num1,num2)}"
+            showUp.textView.text = """    $num1 + $num2 = ${lambdaTest(num1,num2)}
+                |(람다식 적용됨!)
+            """.trimMargin()
         }
     }
 }
